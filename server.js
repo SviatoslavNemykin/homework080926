@@ -5,7 +5,7 @@ const app = express();
 const HOST = "localhost";
 const PORT = 8000;
 
-app.get("/", (req, res) => {
+app.get("/timestamp", (req, res) => {
     res.status(418).json({time: new Date().toLocaleTimeString()});
 });
 
